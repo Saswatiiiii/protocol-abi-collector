@@ -31,7 +31,7 @@ def main():
             "protocol": entry["protocol"],
             "network": entry["network"],
             "contract_address": entry["contract_address"],
-            "contract_name": entry.get("contractName", ""),  # ✅ Added contract name
+            "role": entry.get("role", "unknown"),
             "verified": "yes" if entry["verified"] else "no",
             "events": event_str
         })
@@ -39,7 +39,7 @@ def main():
     with open("final_dataset.json", "w", encoding="utf-8") as out:
         json.dump(final_table, out, indent=2)
 
-    print("✅ Saved final_dataset.json (with contract_name included)")
+    print("✅ Saved final_dataset.json (flat table-like JSON)")
     print(f"📊 Summary:\n   - Total contracts: {total_contracts}\n   - Verified: {verified_count}\n   - Total events extracted: {total_events}")
 
 if __name__ == "__main__":
