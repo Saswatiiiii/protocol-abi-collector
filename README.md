@@ -49,12 +49,13 @@ python extract_events.py
 Example row from `final_dataset.json`:
 ```json
 {
-  "protocol": "zerolend_lending",
-  "network": "ethereum",
-  "contract_address": "0x11dCc26d4bDAc03FFa8841f69313C38240FC429e",
-  "verified": "yes",
-  "events": "Transfer(from address, to address, value uint256), Approval(owner address, spender address, value uint256)"
-}
+    "protocol": "sandclock",
+    "network": "ethereum",
+    "contract_address": "0xbA8A621b4a54e61C442F5Ec623687e2a942225ef",
+    "role": "unknown",
+    "verified": "yes",
+    "events": "Approval(owner address, spender address, value uint256), Transfer(from address, to address, value uint256)"
+  }
 ```
 
 ---
