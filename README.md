@@ -49,12 +49,13 @@ python extract_events.py
 Example row from `final_dataset.json`:
 ```json
 {
-    "protocol": "sandclock",
+    "protocol": "insurace",
     "network": "ethereum",
-    "contract_address": "0xbA8A621b4a54e61C442F5Ec623687e2a942225ef",
+    "contract_address": "0x544c42fbb96b39b21df61cf322b5edc285ee7429",
+    "contractName": "AdminUpgradeabilityProxy",
     "role": "unknown",
     "verified": "yes",
-    "events": "Approval(owner address, spender address, value uint256), Transfer(from address, to address, value uint256)"
+    "events": "AdminChanged(previousAdmin address, newAdmin address), Upgraded(implementation address)"
   }
 ```
 

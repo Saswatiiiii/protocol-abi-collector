@@ -31,6 +31,7 @@ def main():
             "protocol": entry["protocol"],
             "network": entry["network"],
             "contract_address": entry["contract_address"],
+            "contractName": entry["contractName"],
             "role": entry.get("role", "unknown"),
             "verified": "yes" if entry["verified"] else "no",
             "events": event_str
